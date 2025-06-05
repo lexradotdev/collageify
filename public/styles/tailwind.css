@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .btn-primary {
+    @apply px-3 py-1 md:px-5 md:py-2 rounded-full bg-stone-800 text-white;
+  }
+
+  .btn-selected {
+    @apply bg-white text-black;
+  }
+}

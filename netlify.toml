@@ -1,0 +1,13 @@
+[functions]
+  external_node_modules = ["express", "request", "dotenv", "crypto", "cookie-parser", "ejs", "serverless-http"]
+  node_bundler = "esbuild"
+  included_files = ["views/**", "dist/**"]
+
+[build]
+  functions = "netlify/functions"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api"
+  status = 200
